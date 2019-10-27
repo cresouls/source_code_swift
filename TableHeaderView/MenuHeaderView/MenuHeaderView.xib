@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuHeaderView" customModule="JoboyService" customModuleProvider="target">
+            <connections>
+                <outlet property="dpImageView" destination="MV8-DG-Pc0" id="pZc-31-gRR"/>
+                <outlet property="subtitleLabel" destination="jQJ-Wj-BWm" id="io3-L8-TZW"/>
+                <outlet property="titleLabel" destination="LUr-6c-9r4" id="tgL-5P-L5f"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="MV8-DG-Pc0" customClass="BorderedImageView" customModule="JoboyService" customModuleProvider="target">
+                    <rect key="frame" x="10" y="35" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="MV8-DG-Pc0" secondAttribute="height" multiplier="1:1" id="Kws-l0-dvi"/>
+                        <constraint firstAttribute="height" constant="80" id="brx-Cc-ymE"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ds4-VI-Mjq">
+                    <rect key="frame" x="95" y="53.5" width="195" height="43.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUr-6c-9r4">
+                            <rect key="frame" x="0.0" y="0.0" width="195" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9946332255" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQJ-Wj-BWm">
+                            <rect key="frame" x="0.0" y="25.5" width="195" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="Jq0-q3-cG7"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.019607843140000001" green="0.12549019610000001" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ds4-VI-Mjq" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="4P6-W8-ctU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ds4-VI-Mjq" secondAttribute="trailing" constant="10" id="C46-GA-PRh"/>
+                <constraint firstItem="Ds4-VI-Mjq" firstAttribute="leading" secondItem="MV8-DG-Pc0" secondAttribute="trailing" constant="5" id="bdW-Uc-hvS"/>
+                <constraint firstItem="MV8-DG-Pc0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="jab-jy-xYn"/>
+                <constraint firstItem="MV8-DG-Pc0" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="uOZ-SI-Zwx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="user" width="160" height="160"/>
+    </resources>
+</document>
