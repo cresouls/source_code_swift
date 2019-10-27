@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="EnterAmountCell" customModule="JoboyService" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vm7-AO-XXB">
+                        <rect key="frame" x="10" y="10" width="300" height="60"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v2n-Fv-4Bu" customClass="UnderlinedTextField" customModule="JoboyService" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="205" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gfh-CQ-cnU"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="underlineColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIV-MR-shw">
+                                <rect key="frame" x="215" y="10" width="75" height="40"/>
+                                <color key="backgroundColor" red="0.019607843140000001" green="0.12549019610000001" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="VvI-Gd-0Xr"/>
+                                    <constraint firstAttribute="height" constant="40" id="o77-MR-zMs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="SEND">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonActions:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Wsd-ih-6Us"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="GIV-MR-shw" secondAttribute="bottom" constant="10" id="C6c-oZ-yS6"/>
+                            <constraint firstItem="v2n-Fv-4Bu" firstAttribute="leading" secondItem="Vm7-AO-XXB" secondAttribute="leading" constant="10" id="dzb-T7-eWS"/>
+                            <constraint firstItem="GIV-MR-shw" firstAttribute="leading" secondItem="v2n-Fv-4Bu" secondAttribute="trailing" id="hrA-To-1jC"/>
+                            <constraint firstAttribute="trailing" secondItem="GIV-MR-shw" secondAttribute="trailing" constant="10" id="pBO-Pz-RX9"/>
+                            <constraint firstAttribute="bottom" secondItem="v2n-Fv-4Bu" secondAttribute="bottom" constant="10" id="tmn-5k-aVb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="Vm7-AO-XXB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Hyr-22-937"/>
+                    <constraint firstItem="Vm7-AO-XXB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="enB-kz-dHz"/>
+                    <constraint firstAttribute="bottom" secondItem="Vm7-AO-XXB" secondAttribute="bottom" constant="9.5" id="jJ8-7M-38A"/>
+                    <constraint firstAttribute="trailing" secondItem="Vm7-AO-XXB" secondAttribute="trailing" constant="10" id="x1l-aH-aIH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="amountTextField" destination="v2n-Fv-4Bu" id="MW7-l9-Dhg"/>
+                <outlet property="sendButton" destination="GIV-MR-shw" id="H2e-Ri-wee"/>
+            </connections>
+            <point key="canvasLocation" x="132.80000000000001" y="154.72263868065968"/>
+        </tableViewCell>
+    </objects>
+</document>
