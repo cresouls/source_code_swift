@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpVC" customModule="JoboyService" customModuleProvider="target">
+            <connections>
+                <outlet property="categoryTextField" destination="Wc6-6y-Oec" id="NaX-Jw-D2s"/>
+                <outlet property="cityTextField" destination="Y6r-U4-sju" id="odd-wf-zSK"/>
+                <outlet property="confirmPasswordTextField" destination="Xua-Rc-wjS" id="SAS-fF-tp6"/>
+                <outlet property="emailTextField" destination="CzD-tu-n2U" id="Zlg-G2-4fg"/>
+                <outlet property="isCheckedButton" destination="e5a-ru-8cN" id="PTO-16-mmL"/>
+                <outlet property="nameTextField" destination="gGa-tL-yyi" id="nsv-Rx-Ifx"/>
+                <outlet property="passwordTextField" destination="E34-xx-DNx" id="GJ4-c0-IDq"/>
+                <outlet property="referralTextField" destination="lM6-F0-8fs" id="0Ue-mF-gvg"/>
+                <outlet property="scrollView" destination="IzU-qb-gNn" id="K4J-rl-ZiW"/>
+                <outlet property="submitButton" destination="CUJ-uM-t5Q" id="lj6-E8-PP1"/>
+                <outlet property="termsButton" destination="i5s-8b-4yL" id="zSv-3q-IxN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="663"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IzU-qb-gNn">
+                    <rect key="frame" x="0.0" y="20" width="375" height="643"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Rg-tl-aQP">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="643"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="exc-HW-qDV">
+                                    <rect key="frame" x="97.5" y="60" width="180" height="38"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="exc-HW-qDV" secondAttribute="height" multiplier="180:38" id="Brj-3n-Krx"/>
+                                        <constraint firstAttribute="height" constant="38" id="vF5-BS-P2k"/>
+                                    </constraints>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TWh-uq-dAR">
+                                    <rect key="frame" x="20" y="138" width="335" height="485"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gGa-tL-yyi" customClass="UnderlinedTextField" customModule="JoboyService" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="uMt-F0-aom"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="underlineColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CzD-tu-n2U" customClass="UnderlinedTextField" customModule="JoboyService" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="55" width="335" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="v89-dO-1FM"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="underlineColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E34-xx-DNx" customClass="UnderlinedTextField" customModule="JoboyService" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="110" width="335" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="Fg5-mN-khr"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="underlineColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xua-Rc-wjS" customClass="UnderlinedTextField" customModule="JoboyService" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="165" width="335" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="Cvf-L6-Til"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="underlineColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y6r-U4-sju" customClass="UnderlinedTextField" customModule="JoboyService" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="220" width="335" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="MRi-TY-FlL"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="underlineColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select Category" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wc6-6y-Oec" customClass="UnderlinedTextField" customModule="JoboyService" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="275" width="335" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="6MG-QR-Wqy"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="underlineColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Referral / Promo Code [Not Mandatory]" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lM6-F0-8fs" customClass="UnderlinedTextField" customModule="JoboyService" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="330" width="335" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="bZH-Xp-9AM"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="underlineColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tUs-bU-ocq">
+                                            <rect key="frame" x="0.0" y="385" width="265.5" height="45"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5a-ru-8cN">
+                                                    <rect key="frame" x="0.0" y="7.5" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="e5a-ru-8cN" secondAttribute="height" multiplier="1:1" id="7Ey-8a-cij"/>
+                                                        <constraint firstAttribute="height" constant="30" id="9Ba-wR-HxU"/>
+                                                    </constraints>
+                                                    <state key="normal" image="unchecked"/>
+                                                    <state key="selected" image="checked"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I accept the " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhW-l8-dSf">
+                                                    <rect key="frame" x="30" y="14.5" width="75.5" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5s-8b-4yL">
+                                                    <rect key="frame" x="105.5" y="8.5" width="160" height="28"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <state key="normal" title="TERMS AND CONDITIONS">
+                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="buttonActions:" destination="-1" eventType="touchUpInside" id="4v6-gr-SSd"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="Slo-QO-jAZ"/>
+                                            </constraints>
+                                        </stackView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUJ-uM-t5Q" customClass="RoundedButton" customModule="JoboyService" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="440" width="335" height="45"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="a3d-jw-W4X"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                            <state key="normal" title="SUBMIT">
+                                                <color key="titleColor" red="0.019607843140000001" green="0.12549019610000001" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="roundedButtonActions:" destination="-1" eventType="touchUpInside" id="nvc-0B-fGs"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="lM6-F0-8fs" firstAttribute="width" secondItem="TWh-uq-dAR" secondAttribute="width" id="601-NU-37M"/>
+                                        <constraint firstItem="CUJ-uM-t5Q" firstAttribute="width" secondItem="TWh-uq-dAR" secondAttribute="width" id="9aj-uf-Qrr"/>
+                                        <constraint firstItem="gGa-tL-yyi" firstAttribute="width" secondItem="TWh-uq-dAR" secondAttribute="width" id="Dkq-dh-e5g"/>
+                                        <constraint firstItem="E34-xx-DNx" firstAttribute="width" secondItem="TWh-uq-dAR" secondAttribute="width" id="WFl-i8-Qmc"/>
+                                        <constraint firstItem="Y6r-U4-sju" firstAttribute="width" secondItem="TWh-uq-dAR" secondAttribute="width" id="XtM-b5-m95"/>
+                                        <constraint firstItem="Xua-Rc-wjS" firstAttribute="width" secondItem="TWh-uq-dAR" secondAttribute="width" id="iTK-Eg-Xvo"/>
+                                        <constraint firstItem="CzD-tu-n2U" firstAttribute="width" secondItem="TWh-uq-dAR" secondAttribute="width" id="iyl-ee-6fc"/>
+                                        <constraint firstItem="Wc6-6y-Oec" firstAttribute="width" secondItem="TWh-uq-dAR" secondAttribute="width" id="kp9-tx-efg"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.019607843140000001" green="0.12549019610000001" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="TWh-uq-dAR" firstAttribute="leading" secondItem="4Rg-tl-aQP" secondAttribute="leading" constant="20" id="GzJ-O8-BMZ"/>
+                                <constraint firstAttribute="trailing" secondItem="TWh-uq-dAR" secondAttribute="trailing" constant="20" id="Qxz-e1-D5Z"/>
+                                <constraint firstItem="exc-HW-qDV" firstAttribute="centerX" secondItem="4Rg-tl-aQP" secondAttribute="centerX" id="beS-WZ-dqW"/>
+                                <constraint firstItem="exc-HW-qDV" firstAttribute="top" secondItem="4Rg-tl-aQP" secondAttribute="top" constant="60" id="jm1-Ts-Pb0"/>
+                                <constraint firstAttribute="bottom" secondItem="TWh-uq-dAR" secondAttribute="bottom" constant="20" id="o0W-1v-7zH"/>
+                                <constraint firstItem="TWh-uq-dAR" firstAttribute="top" secondItem="exc-HW-qDV" secondAttribute="bottom" constant="40" id="yfC-dC-wQI"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="4Rg-tl-aQP" firstAttribute="top" secondItem="IzU-qb-gNn" secondAttribute="top" id="KYk-Xy-c7K"/>
+                        <constraint firstItem="4Rg-tl-aQP" firstAttribute="leading" secondItem="IzU-qb-gNn" secondAttribute="leading" id="N1l-Le-0NX"/>
+                        <constraint firstAttribute="trailing" secondItem="4Rg-tl-aQP" secondAttribute="trailing" id="Zc8-z9-Y8y"/>
+                        <constraint firstAttribute="bottom" secondItem="4Rg-tl-aQP" secondAttribute="bottom" id="tiq-kh-RXA"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.019607843140000001" green="0.12549019610000001" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="IzU-qb-gNn" secondAttribute="bottom" id="A6c-wk-Muh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IzU-qb-gNn" secondAttribute="trailing" id="cG4-op-uFx"/>
+                <constraint firstItem="IzU-qb-gNn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="jAs-1U-94e"/>
+                <constraint firstItem="4Rg-tl-aQP" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="uE0-Yb-vek"/>
+                <constraint firstItem="IzU-qb-gNn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zfe-ey-wzK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="154.27286356821591"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checked" width="15" height="15"/>
+        <image name="logo" width="180" height="38"/>
+        <image name="unchecked" width="15" height="15"/>
+    </resources>
+</document>
